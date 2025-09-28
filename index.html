@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-GB">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Government Science College Alumni Association- Jabalpur</title>
+    <meta name="description" content="The Official Alumni Network of Government Science College of Jabalpur. Connect with classmates, post jobs, share memories and a lot more.">
+    <link rel="icon" type="image/x-icon" href="Media/college_logo.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #334155;
+            background-color: #f9fafb;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: #046bd2;
+        }
+
+        a:hover {
+            color: #045cb4;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .college-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1e293b;
+            line-height: 1.2;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 40px;
+            margin-left: auto;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .contact-icon {
+            width: 20px;
+            height: 20px;
+            fill: #046bd2;
+        }
+
+        /* Navigation */
+        .nav-menu {
+            background: #f8f9fa;
+            padding: 15px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .nav-item a {
+            color: #334155;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .nav-item a:hover,
+        .nav-item.current a {
+            color: #045cb4;
+            background: #f1f5f9;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #046bd2;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            margin-bottom: 80px;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            color: #046bd2;
+            margin-bottom: 30px;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            color: #64748b;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 600;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            color: #046bd2;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .divider {
+            width: 100px;
+            height: 3px;
+            background: #046bd2;
+            margin: 0 auto 40px;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        .read-more-btn {
+            background: #046bd2;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .read-more-btn:hover {
+            background: #045cb4;
+            color: white;
+        }
+
+        /* Alumni Gallery */
+        .alumni-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .alumni-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .alumni-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .alumni-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .alumni-name {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
+
+        .alumni-title {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        /* Executive Committee */
+        .committee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .committee-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .committee-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            color: #e2e8f0;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-text {
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #046bd2;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #374151;
+            color: #9ca3af;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-info {
+                margin-left: 0;
+                justify-content: center;
+            }
+
+            .nav-list {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .hero-subtitle {
+                font-size: 20px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .alumni-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+            }
+
+            .committee-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero-section {
+                padding: 40px 0;
+            }
+
+            .hero-title {
+                font-size: 24px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .alumni-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="Media/college_logo.png" alt="GSC Alumni Logo" class="logo-img">
+                    <h1 class="college-title">Government Science College Alumni Association Jabalpur(GSCAAJ)</h1>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 448 512">
+                            <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"/>
+                        </svg>
+                        <div>
+                            <div><strong>Phone Number</strong></div>
+                            <div>+91-9407447318</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 512 512">
+                            <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/>
+                        </svg>
+                        <div>
+                            <div><strong>EMAIL</strong></div>
+                            <div>contact@gscalumni.org</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-menu">
+        <div class="container">
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#join">Join Alumni Association</a></li>
+                <li class="nav-item current"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#events">Events</a></li>
+                <!-- <li class="nav-item"><a href="#login">Log In</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <h2 class="hero-title">Welcome To Government Science College Alumni Association Jabalpur</h2>
+                <p class="hero-subtitle">INSPIRED BY EXCELLENCE & INNOVATION</p>
+                <div class="divider"></div>
+                <p class="hero-description">To develop a passionate community of alumni and well-wishers to foster a strong and sustainable relationship with the University for mutual benefits.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">ABOUT GOVERNMENT SCIENCE COLLEGE JABALPUR</h2>
+                        <div class="divider"></div>
+                        <p>The year 1836 was a milestone year when the Robertson College was founded in Sagur (M.P.) as an institution to nurture higher education in the province. Later on the college was shifted to various places at Jabalpur and finally the Robertson College came to an existence in the Civil Engineering Department of the Jabalpur Engineering College, near the bank of the beautiful lake at Gokalpur area of Jabalpur. Later on, the college was transferred to the present building in the year 1956 and bifurcated to the Arts and Science colleges, respectively.</p>
+                        
+                        <p>The Govt. Science College is one of the prime institutions of India devoted to higher learning in almost all premier disciplines of science. The college has had a galaxy of distinguished legendries in the area of science, arts, culture and many more. Some of the notable personalities are famous actor Ashok Kumar, Acharya Rajneesh, Premnath, Pt. Ravi Shankar Shukla etc. The Noble Laurite Prof. C.V.Raman also visited to old Robertson college in the year 1938 and delivered a talk on Raman Effect for which he was conferred with the Noble Prize in Physics.</p>
+                        
+                        <a href="#about" class="read-more-btn">
+                            READ MORE
+                            <svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor">
+                                <path d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256zm72 20v-40c0-6.6 5.4-12 12-12h116v-67c0-10.7 12.9-16 20.5-8.5l99 99c4.7 4.7 4.7 12.3 0 17l-99 99c-7.6 7.6-20.5 2.2-20.5-8.5v-67H140c-6.6 0-12-5.4-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y8NfNQzDKb8?si=SJPwo21wxcdK74R4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notable Alumni Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">NOTABLE ALUMNI</h2>
+                <div class="divider"></div>
+                
+                <div class="alumni-gallery">
+                    <div class="alumni-card">
+                        <img src="Media/dr_hari_singh_gour.jpg" alt="Dr Hari Singh Gour" class="alumni-img">
+                        <h3 class="alumni-name">Dr Hari Singh Gour</h3>
+                        <p class="alumni-title">Founder Sagar University</p>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <img src="Media/Kunji_Lal_Dubey.jpg" alt="Pt Kunji Lal Dubey" class="alumni-img">
+                        <h3 class="alumni-name">Pt Kunji Lal Dubey</h3>
+                        <p class="alumni-title">Former Vidhan Sabha Speaker Madhya Pradesh</p>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <img src="Media/Pt Lajja Shankar Jha.jpg" alt="Pt Lajja Shankar Jha" class="alumni-img">
+                        <h3 class="alumni-name">Pt Lajja Shankar Jha</h3>
+                        <p class="alumni-title">Former BHU Vice Chancellor</p>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <img src="Media/Veni_Shankar_Jha_VC-BHU.jpg" alt="Dr Veni Shankhar Jha" class="alumni-img">
+                        <h3 class="alumni-name">Dr Veni Shankhar Jha</h3>
+                        <p class="alumni-title">Former Vice Chancellor BHU</p>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <img src="Media/Prem_Nath_actor.jpg" alt="Shri Prem Nath" class="alumni-img">
+                        <h3 class="alumni-name">Shri Prem Nath</h3>
+                        <p class="alumni-title">Renowned Actor</p>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <img src="Media/RavishankarShukla.jpg" alt="Pt. Ravi Shankar Shukla" class="alumni-img">
+                        <h3 class="alumni-name">Pt. Ravi Shankar Shukla</h3>
+                        <p class="alumni-title">Former Chief Minister Madhya Pradesh</p>
+                    </div>
+
+                    <div class="alumni-card">
+                    <img src="Media/PT. Bhawani Prasad Mishra.jpg" alt="PT. Bhawani Prasad Mishra" class="alumni-img">
+                    <h3 class="alumni-name">PT. Bhawani Prasad Mishra</h3>
+                    <p class="alumni-title">Renowned Writer and Poet</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/ajay-narayan.jpg" alt="Shri Ajay Narayan Mushran" class="alumni-img">
+                    <h3 class="alumni-name">Shri Ajay Narayan Mushran</h3>
+                    <p class="alumni-title">Former Cabinet Minister MP Government</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Shri-Shravan-Kumar-Patel.gif" alt="Shri Sharvan Bhai Patel" class="alumni-img">
+                    <h3 class="alumni-name">Shri Sharvan Bhai Patel</h3>
+                    <p class="alumni-title">Former Cabinet Minister MP Government</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/DPrao.jpg" alt="Dr D.P Rao" class="alumni-img">
+                    <h3 class="alumni-name">Dr D.P Rao</h3>
+                    <p class="alumni-title">Director National Remote Agency</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/डा. अंबिका प्रसाद अग्रवाल.jpg" alt="डा. अंबिका प्रसाद अग्रवाल" class="alumni-img">
+                    <h3 class="alumni-name">डा. अंबिका प्रसाद अग्रवाल</h3>
+                    <p class="alumni-title">साहित्यरत्न</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/dr-dhirawani-rajesh-jabalpur-dental-surgeons.jpg" alt="Dr Rajesh Dhirawani" class="alumni-img">
+                    <h3 class="alumni-name">Dr Rajesh Dhirawani</h3>
+                    <p class="alumni-title">Renowned Maxillo Facial Surgeon</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Mr Sharad Jain.jpg" alt="Mr Sharad Jain" class="alumni-img">
+                    <h3 class="alumni-name">Mr Sharad Jain</h3>
+                    <p class="alumni-title">Former Cabinet Minister MP Government</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/rakesh-singh.jpg" alt="Mr Rakesh Singh" class="alumni-img">
+                    <h3 class="alumni-name">Mr Rakesh Singh</h3>
+                    <p class="alumni-title">Member Of Parliament Lok Sabha</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Shri Prahlad Patel.jpg" alt="Shri Prahlad Patel" class="alumni-img">
+                    <h3 class="alumni-name">Shri Prahlad Patel</h3>
+                    <p class="alumni-title">Member of Parliament Lok Sabha, State Minister in Central Government</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Mr Lakhan Ghangoria.jpg" alt="Mr Lakhan Ghangoria" class="alumni-img">
+                    <h3 class="alumni-name">Mr Lakhan Ghangoria</h3>
+                    <p class="alumni-title">Former Cabinet Minister MP Government</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Shri Jalam Singh Patel.jpg" alt="Shri Jalam Singh Patel" class="alumni-img">
+                    <h3 class="alumni-name">Shri Jalam Singh Patel</h3>
+                    <p class="alumni-title">Former Cabinet Minister MP Government</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/श्री आलोक चटर्जी.jpg" alt="श्री आलोक चटर्जी" class="alumni-img">
+                    <h3 class="alumni-name">श्री आलोक चटर्जी</h3>
+                    <p class="alumni-title">Former Secretary of Science College Jabalpur Students Union and Gold Medalist of National School of Drama</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Dr. Uday Homkar.jpg" alt="Dr. Uday Homkar" class="alumni-img">
+                    <h3 class="alumni-name">Dr. Uday Homkar</h3>
+                    <p class="alumni-title">Senior Research Officer and Head Conservation Division, State Forest Research Institute</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Pradeep Singh Gour.jpg" alt="Pradeep Singh Gour" class="alumni-img">
+                    <h3 class="alumni-name">Pradeep Singh Gour</h3>
+                    <p class="alumni-title">Retd. Assistant Professor in Geology Govt. P.G. College, Kanker, Chhattisgarh</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/dummy_replace.jpeg" alt="Dr. Rajendra Chapra" class="alumni-img">
+                    <h3 class="alumni-name">Dr. Rajendra Chapra</h3>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Dr. Hemdutt Shukla.jpg" alt="Dr. Hemdutt Shukla" class="alumni-img">
+                    <h3 class="alumni-name">Dr. Hemdutt Shukla</h3>
+                    <p class="alumni-title">Senior Scientist, Maryland USA</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/डा गजेंद्र सिंह.jpg" alt="डा गजेंद्र सिंह" class="alumni-img">
+                    <h3 class="alumni-name">डा गजेंद्र सिंह</h3>
+                    <p class="alumni-title">वरिष्ठ वैज्ञानिक अधिकारी यूसिक, भौतिकी विभाग</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Sadanand D Pimprikar.jpg" alt="Sadanand D Pimprikar" class="alumni-img">
+                    <h3 class="alumni-name">Sadanand D Pimprikar</h3>
+                    <p class="alumni-title">Mineral Award 1980, Environmental Geoscience</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Dr Ramesh Shukla.jpg" alt="Dr Ramesh Shukla" class="alumni-img">
+                    <h3 class="alumni-name">Dr Ramesh Shukla</h3>
+                    <p class="alumni-title">सीनियर स्पोर्ट्स ऑफिसर पदस्थापना</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Shri Anupam Mukherjee.jpg" alt="Shri Anupam Mukherjee" class="alumni-img">
+                    <h3 class="alumni-name">Shri Anupam Mukherjee</h3>
+                    <p class="alumni-title">Singapore Development Authority (SDA), Singapore</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Shri RK Pandey.jpg" alt="Shri RK Pandey" class="alumni-img">
+                    <h3 class="alumni-name">Shri RK Pandey</h3>
+                    <p class="alumni-title">Chemical Examiner in Central Revenue Chemical Services</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Dr Ratan Shrivastava.jpg" alt="Dr Ratan Shrivastava" class="alumni-img">
+                    <h3 class="alumni-name">Dr Ratan Shrivastava</h3>
+                    <p class="alumni-title">Head of Department, Environmental Science, Government Science College Jabalpur</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Dr Prashant Kumar selot.jpg" alt="Dr Prashant Kumar Selot" class="alumni-img">
+                    <h3 class="alumni-name">Dr Prashant Kumar Selot</h3>
+                    <p class="alumni-title">Professor of Physics, Government Science College Jabalpur</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Venu Gopal Naidu.jpg" alt="Venu Gopal Naidu" class="alumni-img">
+                    <h3 class="alumni-name">Venu Gopal Naidu</h3>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/Omprakash Dhurve.jpg" alt="Omprakash Dhurve" class="alumni-img">
+                    <h3 class="alumni-name">Omprakash Dhurve</h3>
+                    <p class="alumni-title">Former Cabinet Minister MP Government</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/S.P.GAUTAM.jpg" alt="S.P. Gautam" class="alumni-img">
+                    <h3 class="alumni-name">S.P. Gautam</h3>
+                    <p class="alumni-title">Chairman, Ganga Project Evaluation Committee, NMCG, New Delhi</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/dummy_replace.jpeg" alt="Dr H B Palan" class="alumni-img">
+                    <h3 class="alumni-name">Dr H B Palan</h3>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/dummy_replace.jpeg" alt="Surendra Singh" class="alumni-img">
+                    <h3 class="alumni-name">Surendra Singh</h3>
+                    <p class="alumni-title">Government Science College Jabalpur Alumni President</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/dummy_replace.jpeg" alt="Dr Harish Agarwal" class="alumni-img">
+                    <h3 class="alumni-name">Dr Harish Agarwal</h3>
+                    <p class="alumni-title">Government Science College Jabalpur Alumni Vice President</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/dummy_replace.jpeg" alt="Sammati Saini" class="alumni-img">
+                    <h3 class="alumni-name">Sammati Saini</h3>
+                    <p class="alumni-title">Government Science College Jabalpur Alumni Secretary</p>
+                </div>
+
+                <div class="alumni-card">
+                    <img src="Media/dummy_replace.jpeg" alt="Professor Girja Shankar Chouksey" class="alumni-img">
+                    <h3 class="alumni-name">Professor Girja Shankar Chouksey</h3>
+                    <p class="alumni-title">1960-1992 Professor in Government Science College Jabalpur</p>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+    <!-- Executive Committee Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Government Science College Jabalpur Alumni Executive Committee Members</h2>
+        <div class="divider"></div>
+        
+        <!-- Principal and Committee Chair -->
+        <div class="leadership-section">
+            <div class="leadership-card">
+                <div class="leadership-image">
+                    <img src="https://via.placeholder.com/200x250/046bd2/ffffff?text=Dr.+Santosh+Jatav" alt="Dr. Santosh Jatav" class="leader-img">
+                </div>
+                <div class="leadership-info">
+                    <h3 class="leader-name">Dr. Santosh Jatav</h3>
+                    <p class="leader-title">Principal, Government Science College Jabalpur</p>
+                    <p class="leader-description">Leading the institution with dedication to academic excellence and fostering alumni relations.</p>
+                </div>
+            </div>
+            
+            <div class="leadership-card">
+                <div class="leadership-image">
+                    <img src="https://via.placeholder.com/200x250/045cb4/ffffff?text=Dr.+Ankita+Bohre" alt="Dr. Ankita Bohre" class="leader-img">
+                </div>
+                <div class="leadership-info">
+                    <h3 class="leader-name">Dr. Ankita Bohre</h3>
+                    <p class="leader-title">Chair, Alumni Executive Committee</p>
+                    <p class="leader-description">Coordinating alumni activities and strengthening the bond between the college and its graduates.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Executive Committee Documents -->
+        <div class="committee-grid">
+            <div class="committee-card">
+                <img src="https://web.archive.org/web/20240321050137im_/https://gscalumni.org/wp-content/uploads/2023/10/11.jpg" alt="Executive Committee Document 1" class="committee-img">
+            </div>
+            <div class="committee-card">
+                <img src="https://web.archive.org/web/20240321050137im_/https://gscalumni.org/wp-content/uploads/2023/10/12.jpg" alt="Executive Committee Document 2" class="committee-img">
+            </div>
+        </div>
+        
+        <!-- Additional Committee Members -->
+        <h3 class="subsection-title">Other Committee Members</h3>
+        <div class="members-grid">
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150x180/6b7280/ffffff?text=Member+Photo" alt="Committee Member" class="member-img">
+                </div>
+                <div class="member-info">
+                    <h4 class="member-name">Member Name</h4>
+                    <p class="member-title">Position Title</p>
+                    <p class="member-description">Brief description of role and responsibilities.</p>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150x180/6b7280/ffffff?text=Member+Photo" alt="Committee Member" class="member-img">
+                </div>
+                <div class="member-info">
+                    <h4 class="member-name">Member Name</h4>
+                    <p class="member-title">Position Title</p>
+                    <p class="member-description">Brief description of role and responsibilities.</p>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150x180/6b7280/ffffff?text=Member+Photo" alt="Committee Member" class="member-img">
+                </div>
+                <div class="member-info">
+                    <h4 class="member-name">Member Name</h4>
+                    <p class="member-title">Position Title</p>
+                    <p class="member-description">Brief description of role and responsibilities.</p>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/150x180/6b7280/ffffff?text=Member+Photo" alt="Committee Member" class="member-img">
+                </div>
+                <div class="member-info">
+                    <h4 class="member-name">Member Name</h4>
+                    <p class="member-title">Position Title</p>
+                    <p class="member-description">Brief description of role and responsibilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Executive Committee Styles */
+.leadership-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin: 40px 0 60px 0;
+}
+
+.leadership-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: transform 0.3s;
+}
+
+.leadership-card:hover {
+    transform: translateY(-5px);
+}
+
+.leadership-image {
+    flex-shrink: 0;
+}
+
+.leader-img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #046bd2;
+}
+
+.leadership-info {
+    flex-grow: 1;
+}
+
+.leader-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.leader-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #046bd2;
+    margin-bottom: 12px;
+}
+
+.leader-description {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.committee-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.committee-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.subsection-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1e293b;
+    text-align: center;
+    margin: 60px 0 30px 0;
+    position: relative;
+}
+
+.subsection-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: #046bd2;
+}
+
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.member-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid #e2e8f0;
+}
+
+.member-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.member-image {
+    margin-bottom: 20px;
+}
+
+.member-img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    transition: border-color 0.3s;
+}
+
+.member-card:hover .member-img {
+    border-color: #046bd2;
+}
+
+.member-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+.member-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #046bd2;
+    margin-bottom: 10px;
+}
+
+.member-description {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Responsive styles for committee section */
+@media (max-width: 768px) {
+    .leadership-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .leadership-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .members-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+</style>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="https://web.archive.org/web/20240321050137im_/https://gscalumni.org/wp-content/uploads/2023/05/science-alumni-1.png" alt="Logo" style="width: 80px; margin-bottom: 20px;">
+                    <p class="footer-text">Early nineteenth century saw Jabalpur as a leading center of education in Central India and later many colleges and educational institutions spread the light of knowledge to the entire area. One of them was Robertson College established in 1836 as Saugor Govt. School in Saugor, upgraded as Saugor Collegiate School in 1860; it was destined to become the renowned Robertson College of Jabalpur.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>GET IN TOUCH</h3>
+                    <div class="contact-item" style="margin-bottom: 15px;">
+                        <div>
+                            <strong>ADDRESS</strong><br>
+                            Pachpedi, South Civil Lines Jabalpur, Madhya Pradesh-482001
+                        </div>
+                    </div>
+                    <div class="contact-item" style="margin-bottom: 15px;">
+                        <div>
+                            <strong>PHONE NUMBER</strong><br>
+                            +91-761-2678737<br>
+                            +91-9407447318
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div>
+                            <strong>EMAIL</strong><br>
+                            contact@gscalumni.org
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#join">Join Alumni Association</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#login">Log In</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>COLLEGE DIRECTION</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.2!2d79.9647!3d23.1685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae89e0b60c71%3A0x8e9d1b0b1e0d0e0d!2sGovernment%20Science%20College%2C%20Jabalpur!5e0!3m2!1sen!2sin!4v1640000000000!5m2!1sen!2sin"
+                        width="100%" 
+                        height="200" 
+                        style="border:0; border-radius: 5px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Copyright © 2024 gscalumni.org | Designed & Developed By Akshay Dengra</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.style.display = navList.style.display === 'flex' ? 'none' : 'flex';
+            
+            if (navList.style.display === 'flex') {
+                navList.style.flexDirection = 'column';
+                navList.style.position = 'absolute';
+                navList.style.top = '100%';
+                navList.style.left = '0';
+                navList.style.right = '0';
+                navList.style.background = '#ffffff';
+                navList.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+                navList.style.padding = '20px';
+                navList.style.zIndex = '1000';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll-to-top functionality
+        const scrollToTop = document.createElement('button');
+        scrollToTop.innerHTML = '↑';
+        scrollToTop.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: #046bd2;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            display: none;
+            z-index: 1000;
+            transition: all 0.3s;
+        `;
+        
+        scrollToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        document.body.appendChild(scrollToTop);
+        
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', () => {
+            scrollToTop.style.display = window.pageYOffset > 300 ? 'block' : 'none';
+        });
+
+        // Add loading animation for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 0.3s';
+        });
+    </script>
+</body>
+</html>
